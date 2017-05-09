@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1494365945 source:c:\users\yaoyuchi\desktop\coursework_task4\main.cpp
+	"Functioner.h"
+
+1494183562 c:\users\yaoyuchi\desktop\coursework_task4\task_4.h
+	<iostream>
+	<fstream>
+	<vector>
+
+1494365404 c:\users\yaoyuchi\desktop\coursework_task4\vertex.h
+	<iostream>
+	<fstream>
+	<vector>
+	<map>
+
+1494264980 c:\users\yaoyuchi\desktop\coursework_task4\functioner.h
+	"Triangle.h"
+
+1494368578 c:\users\yaoyuchi\desktop\coursework_task4\triangle.h
+	"vertex.h"
+
