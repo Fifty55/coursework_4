@@ -19,3 +19,18 @@
 1494368578 c:\users\yaoyuchi\desktop\coursework_task4\triangle.h
 	"vertex.h"
 
+1494365945 source:c:\users\yaoyuchi\desktop\github\coursework_4\main.cpp
+	"Functioner.h"
+
+1494264980 c:\users\yaoyuchi\desktop\github\coursework_4\functioner.h
+	"Triangle.h"
+
+1494369307 c:\users\yaoyuchi\desktop\github\coursework_4\triangle.h
+	"vertex.h"
+
+1494365404 c:\users\yaoyuchi\desktop\github\coursework_4\vertex.h
+	<iostream>
+	<fstream>
+	<vector>
+	<map>
+

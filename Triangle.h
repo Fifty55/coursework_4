@@ -34,16 +34,16 @@ class triangle
 
         int get_third_vertex();
 
-        template<typename container, typename type>
-        typename type::data_type line_function (container *p1,
-                                                     container *p2,
-                                                     container *p3); //This
+        template<typename container>
+        container line_function (vertex<container> *p1,
+                                                     vertex<container> *p2,
+                                                     vertex<container> *p3); //This
 
         template<typename container>
-        bool PointInTriangle (container *pt,
-                              container *v1,
-                              container *v2,
-                              container *v3);
+        bool PointInTriangle (vertex<container> *pt,
+                              vertex<container> *v1,
+                              vertex<container> *v2,
+                              vertex<container> *v3);
 
 
 
@@ -157,20 +157,20 @@ inline int triangle::get_third_vertex()
     return (vertexc);
 }
 
-template<typename container, typename type>  //????????//
-typename type::data_type triangle::line_function (container *p1,
-                                    container *p2,
-                                     container *p3)
+template<typename container>  //????????//
+container triangle::line_function (vertex<container> *p1,
+                                    vertex<container> *p2,
+                                     vertex<container> *p3)
 
 {
     return (p1->get_x() - p3->get_x()) * (p2->get_y() - p3->get_y() ) - (p2->get_x() - p3->get_x() )*(p1->get_y() - p3->get_y() );
 }
 
 template<typename container>
-bool triangle::PointInTriangle (container *pt,
-                               container *v1,
-                               container *v2,
-                                container *v3)
+bool triangle::PointInTriangle (vertex<container> *pt,
+                               vertex<container> *v1,
+                               vertex<container> *v2,
+                                vertex<container> *v3)
 {
 bool b1, b2, b3;
 
