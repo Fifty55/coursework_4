@@ -5,6 +5,7 @@
 #include <vector>
 #include <map>
 #include <cmath>
+#include <algorithm>
 #define VERTEX_H_INCLUDED
 template <typename T>
 class vertex
@@ -17,20 +18,33 @@ class vertex
 
     vertex(int _No=0, T _x=0, T _y=0):No(_No), x(_x), y(_y){}
 
-    vertex(const vertex &_vertex);
+    vertex(const vertex<T> &_vertex);
 
     ~vertex();
 
     vertex(std::istream&fin);
 
+
+
     friend std::ostream& operator<<(std::ostream& out, vertex<T>&_vertex)
     {
+
     out<< _vertex.No <<"  "<<_vertex.x<<"  "<<_vertex.y<<"\n";
 
     return out;
 
     }
 
+    vertex<T> operator = (const vertex<T> &_vertex)
+    {
+
+        No=_vertex.No;
+
+        x =_vertex.x;
+
+        y =_vertex.y;
+
+    }
 
     int get_vertex_numebr();
 
@@ -52,7 +66,7 @@ class vertex
 //------------------------------------------------------------------//
 
 template <typename T>
-vertex<T>::vertex(const vertex &_vertex)
+vertex<T>::vertex(const vertex<T> &_vertex)
 {
     No=_vertex.No;
 
