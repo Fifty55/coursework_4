@@ -50,5 +50,10 @@ class ramp_functioner
 
         }
 
+    template<typename container>
+    inline container calculate_area( vertex<container> *vertexa, vertex<container> *vertexb, vertex<container> *vertexc)
 
+    {
+       return( std::abs( (vertexa->get_x() * (vertexb->get_y() - vertexc->get_y()) + vertexb->get_x() * (vertexc->get_y() - vertexa->get_y()) + vertexc->get_x() * (vertexa->get_y() - vertexb->get_y() ) ) *0.5 ) );
+    }
 #endif // FUNCTIONER_H_INCLUDED

@@ -41,10 +41,14 @@ myfile.close();
 
 //cout<< *node[1];
 int a,b,c;
+double d;
 a=triangle_data [1]->get_first_vertex();
 b=triangle_data [1]->get_second_vertex();
 c=triangle_data [1]->get_third_vertex();
+
+d= calculate_area(node[1],node[2],node[3]);
 //triangle w(1,node[0],node[1],node[3],232.2);
+cout<<d<<"\n";
 cout<<triangle_data[1] -> PointInTriangle(node[0],node[a],node[b],node[c]);
 
 

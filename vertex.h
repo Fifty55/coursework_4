@@ -4,6 +4,7 @@
 #include <fstream>
 #include <vector>
 #include <map>
+#include <cmath>
 #define VERTEX_H_INCLUDED
 template <typename T>
 class vertex
